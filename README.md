@@ -31,7 +31,7 @@ The `sugarcane_data.shp` file contains agronomic data with the following structu
 - 'COD_USINA': 89,
 - 'EST_Corte': 1, 🟢
 - 'Local': 'Usina 3',
-- 'Ordem': 'Latossolos',
+- 'Ordem': 'Latossolos', 🟢
 - 'POL': 0,
 - 'SAFRA': '1920', 🟢
 - 'SAFRA_real': 1819, 🟢
