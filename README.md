@@ -47,7 +47,22 @@ The `sugarcane_data.shp` file contains agronomic data with the following structu
 
 🟢 Green balls indicate mandatory fields in your data. Please ensure attention to both lower and upper cases. 
 
+## To import this github repo into Google Drive using google colab, follow the steps:
+* In the first cell from [Colab](https://colab.research.google.com/), import the drive package and mount you google drive:
 
+```
+from google.colab import drive \n
+drive.mount('/content/drive')
+```
+
+In the next cell, put a bash script that just clones this repo:
+```
+%%bash
+cd /content/drive/MyDrive/Colab Notebooks/
+mkdir -p deep-learning-for-coders
+cd deep-learning-for-coders
+git clone https://github.com/raulpoppiel/sugarcane-yield-prediction.git
+```
 ## Reference
 Please, cite the following paper when using this repository:
 
