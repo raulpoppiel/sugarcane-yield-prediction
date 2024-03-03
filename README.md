@@ -5,7 +5,7 @@
   
   
 ## About
-Tool created by Raul Roberto Poppiel (raulpoppiel@gmail.com) for the [FAPESP](https://fapesp.br/en) project No.  [23/01062-1](https://bv.fapesp.br/en/bolsas/207973/satellite-imagery-and-machine-learning-for-sugarcane-yield-estimation-in-regions-of-sao-paulo-state/) to utilize satellite imagery and machine learning techniques for accurate sugarcane yield estimation in regions of Sao Paulo state, Brazil.
+Tool created by Raul Roberto Poppiel (raulpoppiel@gmail.com) for the [FAPESP](https://fapesp.br/en) project Nº [23/01062-1](https://bv.fapesp.br/en/bolsas/207973/satellite-imagery-and-machine-learning-for-sugarcane-yield-estimation-in-regions-of-sao-paulo-state/) to utilize satellite imagery and machine learning techniques for accurate sugarcane yield estimation in regions of Sao Paulo state, Brazil.
 
 This repository houses a comprehensive suite of scripts designed to facilitate the acquisition of remote sensing data for a diverse array of features (polygons). The primary objective is to support the prediction of sugarcane yield through the implementation of a Random Forest algorithm trained using more than 20,000 observed data. These scripts offer essential functionalities crucial for the seamless execution of this predictive modeling process, empowering researchers and practitioners in agricultural science to effectively harness remote sensing technologies for yield forecasting.
 
