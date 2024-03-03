@@ -1,4 +1,4 @@
-# Yield Prediction using RS and ML  <img align="right" width="200px" src="https://www.omex.com/wp-content/uploads/2020/10/Sugar-Cane-Harvest-1536x772.jpg"/>
+# Sugarcane yield prediction using RS and ML <img align="right" width="200px" src="https://www.omex.com/wp-content/uploads/2020/10/Sugar-Cane-Harvest-1536x772.jpg"/>
 
 <p align='left'>
   <a href="#"><img src="https://img.shields.io/badge/repo%20status-100%25%20ready-green"></a>
