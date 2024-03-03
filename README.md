@@ -11,19 +11,19 @@ This repository houses a comprehensive suite of scripts designed to facilitate t
 
 This repository comprises a comprehensive toolkit consisting of eight scripts meticulously crafted to streamline the management of geometries (shapefiles) and facilitate the acquisition of remote sensing time series data on vegetation indices and climate variables. Additionally, it enables the computation of the hydric balance tailored to your specific area of interest. These functionalities are integral to the process of generating inputs for yield predictions, leveraging a pre-fitted machine learning model provided within the repository. By seamlessly integrating these scripts into your workflow, you can effectively harness remote sensing technologies to enhance the accuracy of sugarcane yield forecasts.
 
-## Core functionalities (Python Colab scripts)
-1) SHP_split.ipynb
-2) climatic_data_daily.ipynb
-3) climatic_data_monthly.ipynb
-4) hydricBalance_data_monthly.ipynb
-5) sentinel2_data_monthly.ipynb
-6) merge_data_all.ipynb
-7) outliers_analysis.ipynb
-8) merge_safra_all.ipynb
-9) XXXXXXXXXXXX
+## Core Functionalities (Python Colab Scripts should be run in the sequence)
+1) **SHP_split.ipynb:** This script addresses the need to split large feature collections, containing over 1,000 polygons or field plots, into smaller collections with a fixed number of polygons. This helps to avoid computation issues, such as limitations on vertices, features, or memory within [Google Earth Engine (GEE)](https://earthengine.google.com/).
+2) **climatic_data_daily.ipynb:** This script facilitates the retrieval of daily climatic data essential for computing hydric balance.
+3) **climatic_data_monthly.ipynb:** Designed to fetch monthly climatic data required for use as a yield predictor.
+4) **hydricBalance_data_monthly.ipynb:** Utilized to compute both daily and monthly hydric balance, serving as a critical yield predictor.
+5) **sentinel2_data_monthly.ipynb:** Specifically crafted to retrieve monthly Sentinel-2 data, a crucial element for yield prediction.
+6) **merge_data_all.ipynb:** This script merges all predictor data according to crop-season (referred to as SAFRA in Portuguese).
+7) **outliers_analysis.ipynb:** Implemented to identify and remove potential outliers in sugarcane yield by crop-season (SAFRA).
+8) **merge_safra_all.ipynb:** This script consolidates data from all crop-seasons (SAFRA) into a unified dataset.
+9) **XXXXXXXXXXXX:** This script is responsible for employing the fitted prediction model alongside the predictors derived from your polygons or field plots to generate yield predictions.
 
 ## Data available for download
-The `data.shp` file contains agronomic data:
+The `sugarcane_data.shp` file contains agronomic data with the following structure:
 - 'ID_SIG': 'X19200890000003600027002', 🟢
 - 'AREA': 46.0963242244,
 - 'BLOCO': 2,
@@ -44,6 +44,8 @@ The `data.shp` file contains agronomic data:
 - 'relevo': 'Suave Ondulado',
 - 'soloGeral': 'LV',
 - 'usina': 'M3'
+
+*** Green balls indicate mandatory fields in your data. Please ensure attention to both lower and upper cases. 
 
 
 ## Reference
