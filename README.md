@@ -45,7 +45,7 @@ The `sugarcane_data.shp` file contains agronomic data with the following structu
 - 'soloGeral': 'LV',
 - 'usina': 'M3'
 
-*** Green balls indicate mandatory fields in your data. Please ensure attention to both lower and upper cases. 
+🟢 Green balls indicate mandatory fields in your data. Please ensure attention to both lower and upper cases. 
 
 
 ## Reference
