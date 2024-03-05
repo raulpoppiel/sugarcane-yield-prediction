@@ -21,7 +21,7 @@ This repository contains a comprehensive suite of scripts aimed at streamlining 
 9) **XXXXXXXXXXXX:** This script is responsible for employing the fitted prediction model alongside the predictors derived from your polygons or field plots to generate yield predictions.
 
 ## Data available for download
-For a reproducible example, the `sugarcane_data.shp` file contains agronomic data with the following structure:
+For a reproducible example, the [`sugarcane_data.shp`](https://github.com/raulpoppiel/sugarcane-yield-prediction/blob/main/01_SugarcaneYieldPrediction/01_input_data/sugarcane_data.shp) file contains agronomic data with the following structure:
 - 'ID_SIG': 'X19200890000003600027002', 🟢
 - 'AREA': 46.0963242244,
 - 'BLOCO': 2,
