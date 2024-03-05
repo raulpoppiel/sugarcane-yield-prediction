@@ -1,11 +1,11 @@
 # Sugarcane yield prediction using RS and ML <img align="right" width="200px" src="https://www.omex.com/wp-content/uploads/2020/10/Sugar-Cane-Harvest-1536x772.jpg"/>
 
 <p align='left'>
-  <a href="#"><img src="https://img.shields.io/badge/repo%20status-100%25%20ready-green"></a>
+  <a href="#"><img src="https://img.shields.io/badge/repo%20status-75%25%20ready-orange"></a>
   
   
 ## About
-Scripts elaborated by Raul Roberto Poppiel (raulpoppiel@gmail.com) for the [FAPESP](https://fapesp.br/en) project Nº [23/01062-1](https://bv.fapesp.br/en/bolsas/207973/satellite-imagery-and-machine-learning-for-sugarcane-yield-estimation-in-regions-of-sao-paulo-state/) to utilize satellite imagery and machine learning techniques for accurate sugarcane yield estimation in regions of Sao Paulo state, Brazil. The methodology employed was developed by Rafaella Pironato Amaro ([rafaellapironato.amaro@gmail.com](rafaellapironato.amaro@gmail.com)) and is detailed in the document titled [Estimativa de produtividade da cana-de-açúcar a partir de imagens do satélite Sentinel-2A e o algoritmo de aprendizagem de máquina Random Forest](https://doi.org/10.11606/D.11.2023.tde-02102023-163947).
+Scripts elaborated by Raul Roberto Poppiel (raulpoppiel@gmail.com) for the [FAPESP](https://fapesp.br/en) project Nº [23/01062-1](https://bv.fapesp.br/en/bolsas/207973/satellite-imagery-and-machine-learning-for-sugarcane-yield-estimation-in-regions-of-sao-paulo-state/). These scripts leverage satellite imagery and machine learning techniques for sugarcane yield estimation in regions of Sao Paulo state, Brazil. The methodology is outlined in the [MSc Dissertation](https://doi.org/10.11606/D.11.2023.tde-02102023-163947) by Rafaella Pironato Amaro ([rafaellapironato.amaro@gmail.com](rafaellapironato.amaro@gmail.com)).
 
 This repository contains a comprehensive suite of scripts aimed at streamlining the acquisition of remote sensing data for sugarcane plots (polygons), with the primary goal of facilitating the prediction of sugarcane yield. Through the utilization of a Random Forest algorithm trained on a dataset comprising over 20,000 observed sugarcane yield records, the scripts enable users to effectively manage geometries (shapefiles) and retrieve remote sensing time series data on vegetation indices, climate variables, and compute hydric balance across your specific areas of interest. These datasets serve as inputs to the trained model provided for accurate sugarcane yield predictions. See model perfomance report in the specific folder in this repo. 
 
@@ -21,7 +21,7 @@ This repository contains a comprehensive suite of scripts aimed at streamlining 
 9) **XXXXXXXXXXXX:** This script is responsible for employing the fitted prediction model alongside the predictors derived from your polygons or field plots to generate yield predictions.
 
 ## Data available for download
-The `sugarcane_data.shp` file contains agronomic data with the following structure:
+For a reproducible example, the `sugarcane_data.shp` file contains agronomic data with the following structure:
 - 'ID_SIG': 'X19200890000003600027002', 🟢
 - 'AREA': 46.0963242244,
 - 'BLOCO': 2,
@@ -62,6 +62,6 @@ cd deep-learning-for-coders
 git clone https://github.com/raulpoppiel/sugarcane-yield-prediction.git
 ```
 ## Reference
-Please, cite the following paper when using this repository:
+Please, cite the following paper (currently under development) when using this repository:
 
-> Luciano, A.C.S., Second author, Third Author, 2024. Satellite imagery and machine learning for sugarcane yield estimation in regions of Sao Paulo state. Journal X, 116029. [https://doi.org/10.1016/j.geoderma.2022.116029](https://doi.org/10.1016/j.geoderma.2022.116029)
+> Luciano, A.C.S., Second author, Third Author, 2024. Satellite imagery and machine learning for sugarcane yield estimation in regions of Sao Paulo state. Journal X, 116029. [https://doi.org](https://www.sciencedirect.com/)
