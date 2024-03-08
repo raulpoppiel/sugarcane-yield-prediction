@@ -53,7 +53,7 @@ from google.colab import drive
 drive.mount('/content/drive')
 ```
 
-In the next cell, put a bash script that just clones this repo:
+In the next cell, past the following script to clone this repo into your Google Drive:
 ```
 import os
 from pathlib import Path
