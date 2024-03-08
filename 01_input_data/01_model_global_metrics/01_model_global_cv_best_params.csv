@@ -1,0 +1,13 @@
+Parameter,Value
+bootstrap,True
+criterion,squared_error
+max_depth,500
+max_leaf_nodes,
+max_samples,
+min_samples_leaf,1
+min_samples_split,4
+n_estimators,200
+n_jobs,
+oob_score,False
+random_state,42
+verbose,0
