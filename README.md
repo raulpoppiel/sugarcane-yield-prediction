@@ -55,11 +55,18 @@ drive.mount('/content/drive')
 
 In the next cell, put a bash script that just clones this repo:
 ```
-%%bash
-cd /content/drive/MyDrive/Colab Notebooks/
-mkdir -p deep-learning-for-coders
-cd deep-learning-for-coders
-git clone https://github.com/raulpoppiel/sugarcane-yield-prediction.git
+import os
+from pathlib import Path
+out_path = '/content/drive/MyDrive/Colab Notebooks/'
+
+if not os.path.exists(out_path):
+  Path(out_path).mkdir(parents=True, exist_ok=True)
+  print("Output directory created successfully.")
+else:
+  print("Output directory already exists.")
+
+%cd "{out_path}"
+!git clone https://github.com/raulpoppiel/sugarcane-yield-prediction.git
 ```
 ## Reference
 Please, cite the following paper (currently under development) when using this repository:
