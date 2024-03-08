@@ -49,7 +49,7 @@ For a reproducible example, the [`sugarcane_data`](https://github.com/raulpoppie
 * In the first cell from [Colab](https://colab.research.google.com/), import the drive package and mount you google drive:
 
 ```
-from google.colab import drive \n
+from google.colab import drive
 drive.mount('/content/drive')
 ```
 
