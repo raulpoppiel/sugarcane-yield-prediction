@@ -46,7 +46,7 @@ For a reproducible example, the [`sugarcane_data`](https://github.com/raulpoppie
 🟢 Green balls indicate mandatory fields in your data. Please ensure attention to both lower and upper cases. 
 
 ## To import this github repo into Google Drive using google colab, follow the steps:
-* In the first cell from [Colab](https://colab.research.google.com/), import the drive package and mount you google drive:
+In the first cell from [Colab](https://colab.research.google.com/), import the drive package and mount you google drive:
 
 ```
 from google.colab import drive
