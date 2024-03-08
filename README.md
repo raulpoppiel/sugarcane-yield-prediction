@@ -9,6 +9,31 @@ Scripts elaborated by Raul Roberto Poppiel (raulpoppiel@gmail.com) for the [FAPE
 
 This repository contains a comprehensive suite of scripts aimed at streamlining the acquisition of remote sensing data for sugarcane plots (polygons), with the primary goal of facilitating the prediction of sugarcane yield. Through the utilization of a Random Forest algorithm trained on a dataset comprising over 20,000 observed sugarcane yield records, the scripts enable users to effectively manage geometries (shapefiles) and retrieve remote sensing time series data on vegetation indices, climate variables, and compute hydric balance across your specific areas of interest. These datasets serve as inputs to the trained model provided for accurate sugarcane yield predictions. See model perfomance report in the specific folder in this repo. 
 
+## To import this github repo into your Google Drive using Colab, follow the steps:
+In the first cell from [Colab](https://colab.research.google.com/), import the drive package and mount you google drive:
+
+```
+from google.colab import drive
+drive.mount('/content/drive')
+```
+
+In the next cell, past the following script to clone this repo into your Google Drive:
+```
+import os
+from pathlib import Path
+out_path = '/content/drive/MyDrive/Colab Notebooks/'
+
+if not os.path.exists(out_path):
+  Path(out_path).mkdir(parents=True, exist_ok=True)
+  print("Output directory created successfully.")
+else:
+  print("Output directory already exists.")
+
+%cd "{out_path}"
+!git clone https://github.com/raulpoppiel/sugarcane-yield-prediction.git
+```
+Go to folder "Colab Notebooks" in your GD to find this repo.
+
 ## Core Functionalities (Python Colab Scripts should be run in the sequence)
 1) **SHP_split.ipynb:** This script addresses the need to split large feature collections, containing over 1,000 polygons or field plots, into smaller collections with a fixed number of polygons. This helps to avoid computation issues, such as limitations on vertices, features, or memory within [Google Earth Engine (GEE)](https://earthengine.google.com/). The shapefile(s) containing polygons must be uploaded to GEE for their utilization in the subsequent scripts.
 2) **climatic_data_daily.ipynb:** This script facilitates the retrieval of daily climatic data essential for computing hydric balance.
@@ -45,29 +70,6 @@ For a reproducible example, the [`sugarcane_data`](https://github.com/raulpoppie
 
 🟢 Green balls indicate mandatory fields in your data. Please ensure attention to both lower and upper cases. 
 
-## To import this github repo into Google Drive using google colab, follow the steps:
-In the first cell from [Colab](https://colab.research.google.com/), import the drive package and mount you google drive:
-
-```
-from google.colab import drive
-drive.mount('/content/drive')
-```
-
-In the next cell, past the following script to clone this repo into your Google Drive:
-```
-import os
-from pathlib import Path
-out_path = '/content/drive/MyDrive/Colab Notebooks/'
-
-if not os.path.exists(out_path):
-  Path(out_path).mkdir(parents=True, exist_ok=True)
-  print("Output directory created successfully.")
-else:
-  print("Output directory already exists.")
-
-%cd "{out_path}"
-!git clone https://github.com/raulpoppiel/sugarcane-yield-prediction.git
-```
 ## Reference
 Please, cite the following paper (currently under development) when using this repository:
 
