@@ -15,7 +15,7 @@ Scripts elaborated by Raul Roberto Poppiel (raulpoppiel@gmail.com) for the [FAPE
 This repository contains a comprehensive suite of scripts aimed at streamlining the acquisition of remote sensing data for sugarcane plots (polygons), with the primary goal of facilitating the prediction of sugarcane yield. Through the utilization of a Random Forest algorithm trained on a dataset comprising over 20,000 observed sugarcane yield records, the scripts enable users to effectively manage geometries (shapefiles) and retrieve remote sensing time series data on vegetation indices, climate variables, and compute hydric balance across your specific areas of interest. These datasets serve as inputs to the trained model provided for accurate sugarcane yield predictions. See model perfomance report in the specific folder in this repo. 
 
 ## To import this github repo into your Google Drive using Colab, follow the steps:
-In the first cell from [Colab](https://colab.research.google.com/), import the drive package and mount you google drive:
+In the first cell from [Colab](clone_Git_repo_to_GD.ipynb), import the drive package and mount you google drive:
 
 ```
 from google.colab import drive
