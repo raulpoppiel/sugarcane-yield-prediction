@@ -1,3 +1,8 @@
+<p align='center'>
+  <a href="#"><img  width="300px" src="https://fealq.org.br/esalqshow/wp-content/uploads/2021/04/03-Esalq-USP-Horizontal-Digital-VERDE-768x183.png"></a>
+  <a href="#"><img  width="300px" src="https://fapesp.br/assets/img/logo-simple2.png"></a>
+
+
 # Sugarcane yield prediction using RS and ML <img align="right" width="200px" src="https://www.omex.com/wp-content/uploads/2020/10/Sugar-Cane-Harvest-1536x772.jpg"/>
 
 <p align='left'>
