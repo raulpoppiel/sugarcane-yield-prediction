@@ -48,7 +48,7 @@ Go to folder "Colab Notebooks" in your GD to find this repo.
 6) **merge_data_all.ipynb:** This script merges all predictor data according to crop-season (referred to as SAFRA in Portuguese).
 7) **outliers_analysis.ipynb:** Implemented to identify and remove potential outliers in sugarcane yield by crop-season (SAFRA).
 8) **merge_safra_all.ipynb:** This script consolidates data from all crop-seasons (SAFRA) into a unified dataset.
-9) **XXXXXXXXXXXX:** This script is responsible for employing the fitted prediction model alongside the predictors derived from your polygons or field plots to generate yield predictions.
+9) **trained_prediction_model:** This script is responsible for employing the fitted prediction model alongside the predictors derived from your polygons or field plots to generate yield predictions.
 
 ## Data available for download
 For a reproducible example, the [`sugarcane_data`](https://github.com/raulpoppiel/sugarcane-yield-prediction/tree/main/01_SugarcaneYieldPrediction/01_input_data) file contains agronomic data with the following structure:
