@@ -12,7 +12,7 @@
 ## About
 Scripts elaborated by Raul Roberto Poppiel (raulpoppiel@gmail.com) for the [FAPESP](https://fapesp.br/en) project Nº [23/01062-1](https://bv.fapesp.br/en/bolsas/207973/satellite-imagery-and-machine-learning-for-sugarcane-yield-estimation-in-regions-of-sao-paulo-state/), led by Professor Ana Claudia dos Santos Luciano ([analuciano@usp.br](analuciano@usp.br)) from ESALQ/USP, Brazil. These scripts leverage satellite imagery and machine learning techniques for sugarcane yield estimation in regions of Sao Paulo state, Brazil. The methodology is outlined in the [MSc Dissertation](https://doi.org/10.11606/D.11.2023.tde-02102023-163947) by Rafaella Pironato Amaro.
 
-This repository contains a comprehensive suite of scripts aimed at streamlining the acquisition of remote sensing data for sugarcane plots (polygons), with the primary goal of facilitating the prediction of sugarcane yield. Through the utilization of a Random Forest algorithm trained on a dataset comprising over 20,000 observed sugarcane yield records, the scripts enable users to effectively manage geometries (shapefiles) and retrieve remote sensing time series data on vegetation indices, climate variables, and compute hydric balance across your specific areas of interest. These datasets serve as inputs to the trained model provided for accurate sugarcane yield predictions. See model perfomance report in the specific folder in this repo. 
+This repository contains a comprehensive suite of scripts aimed at streamlining the acquisition of remote sensing data for sugarcane plots (polygons), with the primary goal of facilitating the prediction of sugarcane yield. Through the utilization of a Random Forest algorithm trained on a dataset comprising over 20,000 observed sugarcane yield records, the scripts enable users to retrieve remote sensing time series data on vegetation indices and climate variables across your specific areas of interest. These datasets serve as inputs to the trained model provided for accurate sugarcane yield predictions. See model perfomance report in the specific folder in this repo. 
 
 ## To import this github repo into your Google Drive using Colab, follow the steps:
 In the first cell from [Colab](clone_Git_repo_to_GD.ipynb), import the drive package and mount you google drive:
@@ -40,15 +40,10 @@ else:
 Go to folder "Colab Notebooks" in your GD to find this repo.
 
 ## Core Functionalities (Python Colab Scripts should be run in the sequence)
-1) **SHP_split.ipynb:** This script addresses the need to split large feature collections, containing over 1,000 polygons or field plots, into smaller collections with a fixed number of polygons. This helps to avoid computation issues, such as limitations on vertices, features, or memory within [Google Earth Engine (GEE)](https://earthengine.google.com/). The shapefile(s) containing polygons must be uploaded to GEE for their utilization in the subsequent scripts.
-2) **climatic_data_daily.ipynb:** This script facilitates the retrieval of daily climatic data essential for computing hydric balance.
-3) **climatic_data_monthly.ipynb:** Designed to fetch monthly climatic data required for use as a yield predictor.
-4) **hydricBalance_data_monthly.ipynb:** Utilized to compute both daily and monthly hydric balance, serving as a critical yield predictor.
-5) **sentinel2_data_monthly.ipynb:** Specifically crafted to retrieve monthly Sentinel-2 data, a crucial element for yield prediction.
-6) **merge_data_all.ipynb:** This script merges all predictor data according to crop-season (referred to as SAFRA in Portuguese).
-7) **outliers_analysis.ipynb:** Implemented to identify and remove potential outliers in sugarcane yield by crop-season (SAFRA).
-8) **merge_safra_all.ipynb:** This script consolidates data from all crop-seasons (SAFRA) into a unified dataset.
-9) **trained_prediction_model:** This script is responsible for employing the fitted prediction model alongside the predictors derived from your polygons or field plots to generate yield predictions.
+1) **climatic_data_daily.ipynb:** This script facilitates the retrieval of daily climatic data essential for computing hydric balance.
+2) **climatic_data_monthly.ipynb:** Designed to fetch monthly climatic data required for use as a yield predictor.
+3) **sentinel2_data_monthly.ipynb:** Specifically crafted to retrieve monthly Sentinel-2 data, a crucial element for yield prediction.
+4) **trained_prediction_model:** This script is responsible for employing the fitted prediction model alongside the predictors derived from your polygons or field plots to generate yield predictions.
 
 ## Data available for download
 For a reproducible example, the [`sugarcane_data`](https://github.com/raulpoppiel/sugarcane-yield-prediction/tree/main/01_SugarcaneYieldPrediction/01_input_data) file contains agronomic data with the following structure:
